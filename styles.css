@@ -1,0 +1,86 @@
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    #gameContainer {
+      display: flex;
+      justify-content: center;
+    }
+    #gameBoard {
+      display: grid;
+      grid-template-columns: repeat(5, 50px);
+      gap: 5px;
+      margin: 20px auto;
+      justify-content: center;
+    }
+    .cell {
+  width: 50px;
+  height: 50px;
+  background: #0074D9;
+  color: white;
+  border: 2px solid #7FDBFF;
+  font-size: 46px;      /* Bigger font for the emoji */
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;    /* Match height for vertical centering */
+  padding: 0;
+}
+    #questionBox {
+      margin-top: 20px;
+    }
+    #question {
+        height: 40px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px;
+      background-color: #39CCCC;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3D9970;
+    }
+    #streakTable {
+      margin: 10px auto;
+      border-collapse: collapse;
+    }
+    #streakTable td {
+      width: 60px;
+      height: 40px;
+      border: 1px solid white;
+      background-color: #003366;
+      color: white;
+      font-weight: bold;
+    }
+    p{
+        font-size:1.2rem;
+    }
+    .green {
+      background-color: #2ECC40 !important;
+    }
+    #qanda {
+  border: 2px solid white;
+  padding: 15px;
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #003366;
+  border-radius: 10px;
+  width: 95vw;    /* 95% of the viewport width */
+  height: 150px;   /* 95% of the viewport height */
+  margin: 0 auto; /* Center it horizontally */
+  padding: 20px;  /* Optional: add some padding inside the div */
+  box-sizing: border-box; /* Include padding in the width/height calculation */
+  overflow: auto; /* In case the content exceeds the div size */
+}
+#winMessage {
+  text-align: center;
+  background-color: #001f3f;
+  color: white;
+  padding: 50px;
+  font-size: 24px;
+}
